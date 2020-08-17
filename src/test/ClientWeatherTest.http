@@ -1,0 +1,8 @@
+GET http://api.weatherapi.com/v1/current.json?key=d8ff71348e7c42d6918182014200708&q=Kraczkowa
+Accept: application/json
+
+###
+GET http://api.weatherapi.com/v1/forecast.json?key=d8ff71348e7c42d6918182014200708&q=Kraczkowa&days={3}
+Accept: application/json
+
+###

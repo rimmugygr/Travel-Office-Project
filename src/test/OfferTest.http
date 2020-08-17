@@ -1,0 +1,29 @@
+GET http://localhost:8080/v1/offer
+Accept: application/json
+###
+
+POST http://localhost:8080/v1/offer
+Content-Type: application/json
+
+{
+  "name": "Wycieczka na zadupia",
+  "cityId": 1 ,
+  "price": 999 ,
+  "description": "Wycieczka na zadupia",
+  "date": "2020-08-10",
+  "day": 1
+}
+###
+
+POST http://localhost:8080/v1/offer
+Content-Type: application/json
+
+{
+  "name": "Trip",
+  "cityId": 1 ,
+  "price": 949 ,
+  "description": "Long Trip",
+  "date": "2020-08-10",
+  "day": 3
+}
+###

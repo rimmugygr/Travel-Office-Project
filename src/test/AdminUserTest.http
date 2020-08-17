@@ -1,0 +1,40 @@
+GET http://localhost:8080/v1/admin/user
+Accept: application/json
+###
+
+POST http://localhost:8080/v1/admin/user
+Content-Type: application/json
+
+{
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail@domena.pl",
+  "username": "aaa",
+  "password": "{noop}aaa"
+}
+###
+POST http://localhost:8080/v1/admin/user
+Content-Type: application/json
+
+{
+  "firstName": "xxx",
+  "lastName": "yyy",
+  "email": "mail@domena.pl",
+  "username": "bbb",
+  "password": "{noop}bbb",
+  "userAuthorities": ["ADMIN"]
+}
+###
+PATCH http://localhost:8080/v1/admin/user/1
+Content-Type: application/json
+
+{
+  "userAuthorities": ["ADMIN"]
+}
+###
+PATCH http://localhost:8080/v1/admin/user/1
+Content-Type: application/json
+
+{
+  "interestedCityId": [1,2]
+}

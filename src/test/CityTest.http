@@ -1,0 +1,27 @@
+GET http://localhost:8080/v1/cities
+Accept: application/json
+###
+POST http://localhost:8080/v1/cities
+Content-Type: application/json
+
+{
+  "name": "Krakow",
+  "countryId": 1
+}
+###
+POST http://localhost:8080/v1/cities
+Content-Type: application/json
+
+{
+  "name": "Warszawa",
+  "countryId": 1
+}
+###
+POST http://localhost:8080/v1/cities
+Content-Type: application/json
+
+{
+  "name": "Rzeszow",
+  "countryId": 1
+}
+###

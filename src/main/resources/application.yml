@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: dev
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    port: 587
+    username: xxx
+    password: xxx
+    protocol: smtp
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+      ssl.trust: smtp.gmail.com
+
+application:
+  weather:
+    apiUrl: http://api.weatherapi.com
+    apiGetCurrentWeatherPath: /v1/current.json?key={key}&q={q}
+    apiGetDailyWeatherPath: /v1/forecast.json?key={key}&q={q}&days={d}
+    apiKey: 80d6d768ef0f45d1b6a65942200908
+
+info:
+  app:
+    name: @project.name@
+    version: @project.version@
+    profile: ${spring.profiles.active}
+    spring-version: @spring-boot.version@
+  serverInfo:
+    os: ${os.name}
+    os-version: ${os.version}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

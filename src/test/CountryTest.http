@@ -1,0 +1,15 @@
+GET http://localhost:8080/v1/countries
+Accept: application/json
+###
+
+POST http://localhost:8080/v1/countries
+Content-Type: application/json
+
+{
+  "name": "Poland",
+  "capital": "Warsaw",
+  "language": "Polish",
+  "currency": "PLN",
+  "population": 820248
+}
+###
