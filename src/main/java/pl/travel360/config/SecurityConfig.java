@@ -27,7 +27,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.
                 authorizeRequests()
                 .antMatchers("/v2/api-docs", "/swagger*/**", "/webjars/**", "/h2-console/**").permitAll()
- //               .anyRequest().authenticated()
+// for test
+//                .antMatchers("/v1/user").authenticated()
+//                .antMatchers().hasAuthority("ADMIN")
                 .anyRequest().permitAll()
                 .and()
                 .formLogin().disable()
