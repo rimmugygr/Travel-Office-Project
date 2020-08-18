@@ -13,6 +13,12 @@ spring:
       starttls.enable: true
       ssl.trust: smtp.gmail.com
 
+springfox:
+  documentation:
+    auto-startup: true
+
+
+
 application:
   weather:
     apiUrl: http://api.weatherapi.com
