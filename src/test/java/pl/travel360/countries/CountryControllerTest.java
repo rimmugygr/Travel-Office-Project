@@ -1,6 +1,7 @@
 package pl.travel360.countries;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,7 @@ class CountryControllerTest {
     @MockBean
     CountryMapper mockMapper;
 
+    @Disabled
     @Test
     //@Disabled
     @WithMockUser

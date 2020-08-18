@@ -1,6 +1,7 @@
 package pl.travel360.countries;
 
 import org.hamcrest.MatcherAssert;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;
@@ -27,7 +28,7 @@ class CountryServiceTest {
 
     @Autowired
     CountryService service;
-
+    @Disabled
     @Test
     void shouldGetCountryFromRepositoryByName() {
         //given

@@ -1,5 +1,6 @@
 package pl.travel360.countries;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -16,7 +17,7 @@ class CountryRepositoryTest {
 
     @Autowired
     CountryRepository repository;
-
+    @Disabled
     @Test
     void shouldShowCountriesWithPopulationAboveGivenLimit() {
         //given
