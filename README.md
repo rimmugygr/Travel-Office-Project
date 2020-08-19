@@ -12,10 +12,14 @@ Description functionality:
 Project has swagger ui and docker.
 
 Used:
-- lombok
-- mapstruct
-- swagger2
+- java 11
+- spring boot 2.3.2
+- maven
+- lombok 1.18.12
+- mapstruct 1.3.1
+- swagger 2.9.2
 - mysql
+- h2
 - spring seciurity
 - spring jpa
 - spring mvc
